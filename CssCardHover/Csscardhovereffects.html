@@ -1,0 +1,145 @@
+ <html>
+<head>
+<meta http-equiv=Content-Type content="text/htm; charset=utf-8">
+<meta name="robots" content="all">
+<title> sekme başlık</title>
+<style>
+body{
+margin:0;
+padding:0;
+background:#333;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+.container{
+width:1000px;
+position:relative;
+display:flex;
+justify-content:space-between;
+}
+.container .card{
+position:relative;
+}
+.container .card .face{
+width:300px;
+height:150px;
+transition:1s;
+}
+.container .card .face.face1{
+position:relative;
+background:#333;
+display:flex;
+justify-content:center;
+align-items:center;
+z-index:1;
+transform:translateY(0px);
+}
+.container .card:hover .face.face1{
+background:purple;
+transform:translateY(-10px);
+}
+.container .card .face.face2{
+position:relative;
+background:#fff;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:20px;
+box-sizing:border-box;
+box-shadow:0 20px 50px;
+transform:translateY(-150px);
+}
+.container .card:hover .face.face2{
+transform:translateY(0);
+}
+.container .card .face.face2 .content p{
+margin:0;
+padding:0;
+}
+.container .card .face.face2 .content a{
+margin:15px 0 0;
+display:inline-block;
+text-decoration:none;
+color:#333;
+padding:5px;
+border:1px solid #333;
+}
+.container .card .face.face2 .content a:hover{
+background:#333;
+color:#fff;
+}
+.container .card .face.face1 .content{
+opacity:0.4;
+transition:1s;
+}
+.container .card .face.face1 .content img{
+max-width:250px;
+display:block;
+margin:auto;
+}
+.container .card .face.face1 .content h4{
+margin:10px 0 0;
+padding:0;
+color:#fff;
+text-align:center;
+}
+@media(max-width:992px){
+.card{
+width:45%;
+margin-left:5px;
+}
+.card-container{
+flex-wrap:wrap;
+}
+}
+
+</style>
+</head>
+<body>
+<div class="container">
+<div class="card">
+<div class="face face1">
+<div class="content">
+<img src="design.png"  alt="d" style="width:40%">
+<h4>Design</h4>
+</div>
+</div>
+<div class="face face2">
+<div class="content">
+<p>lorem ipsum sit dolor amet</p>
+<a href="#">Read More</a>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="face face1">
+<div class="content">
+<img src="code.png"  alt="c" style="width:40%">
+<h4>Code</h4>
+</div>
+</div>
+<div class="face face2">
+<div class="content">
+<p>lorem ipsum sit dolor amet</p>
+<a href="#">Read More</a>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="face face1">
+<div class="content">
+<img src="launch.png"  alt="l" style="width:40%">
+<h4>Launch</h4>
+</div>
+</div>
+<div class="face face2">
+<div class="content">
+<p>lorem ipsum sit dolor amet</p>
+<a href="#">Read More</a>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
